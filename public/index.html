@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DragonSMP | Official</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Animated Background Particles -->
+    <div class="particles-bg" id="particles"></div>
+    
+    <!-- Top Navigation Bar -->
+    <header class="top-nav">
+        <div class="nav-content">
+            <div class="nav-left">
+                <div class="logo-glow">
+                    <img src="logo.png" alt="Logo" class="nav-logo-img">
+                </div>
+                <div class="nav-title-group">
+                    <span class="nav-title">DRAGONSMP</span>
+                    <span class="nav-subtitle">OFFICIAL SERVER</span>
+                </div>
+            </div>
+            <div class="nav-right">
+                <div class="online-status" id="server-status">
+                    <span class="status-dot pulse"></span>
+                    <span class="status-text">BAĞLANIYOR...</span>
+                    <span class="player-number" id="player-count"></span>
+                </div>
+            </div>
+        </div>
+        <div class="nav-glow"></div>
+    </header>
+
+    <main class="main-container">
+        
+        <!-- Main Logo Card Column -->
+        <div class="left-column">
+            <div class="card logo-card">
+                <div class="logo-ring"></div>
+                <div class="logo-ring ring-2"></div>
+                <img src="logo.png" alt="DragonSMP" class="main-dragon-logo">
+                <div class="logo-flames">
+                    <div class="flame"></div>
+                    <div class="flame"></div>
+                    <div class="flame"></div>
+                </div>
+            </div>
+            
+            <div class="ip-container" id="copy-ip">
+                <div class="ip-icon">
+                    <i class="fa-solid fa-server"></i>
+                </div>
+                <div class="ip-content">
+                    <span class="ip-label">SERVER IP</span>
+                    <span class="ip-text">DRAGONSMP.SHOCK.GG</span>
+                </div>
+                <div class="ip-copy-btn">
+                    <i class="fa-regular fa-copy"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Store Card -->
+        <div class="card store-card" data-modal="store">
+            <div class="card-shine"></div>
+            <div class="overlay">
+                <div class="card-icon">
+                    <i class="fa-solid fa-shopping-cart"></i>
+                </div>
+                <h2>STORE</h2>
+                <p>Marketten alışveriş yapın</p>
+                <div class="card-badge">YAKINDA</div>
+            </div>
+            <img src="store.png" class="card-bg-img">
+            <div class="hover-border"></div>
+        </div>
+
+        <!-- Social Media Card -->
+        <div class="card social-card">
+            <div class="card-shine"></div>
+            <h3 class="card-title">
+                <i class="fa-solid fa-users"></i>
+                TOPLULUK
+            </h3>
+            
+            <a href="https://youtube.com/@Sshady1545" target="_blank" class="social-box yt">
+                <div class="social-icon">
+                    <i class="fab fa-youtube"></i>
+                </div>
+                <div class="social-info">
+                    <strong class="social-number">4,000+</strong>
+                    <span class="social-label">YouTube Abonesi</span>
+                </div>
+                <div class="social-arrow">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </a>
+            
+            <a href="https://discord.gg/JUj7SHGdF6" target="_blank" class="social-box dc">
+                <div class="social-icon">
+                    <i class="fab fa-discord"></i>
+                </div>
+                <div class="social-info">
+                    <strong class="social-number">1,000+</strong>
+                    <span class="social-label">Discord Üyesi</span>
+                </div>
+                <div class="social-arrow">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </a>
+            <div class="hover-border"></div>
+        </div>
+
+        <!-- Stats Card -->
+        <div class="card stats-card" data-modal="stats">
+            <div class="card-shine"></div>
+            <div class="overlay">
+                <div class="card-icon">
+                    <i class="fa-solid fa-chart-line"></i>
+                </div>
+                <h2>STATS</h2>
+                <p>Oyuncu istatistikleri</p>
+                <div class="card-badge">YAKINDA</div>
+            </div>
+            <img src="stats.jpg" class="card-bg-img">
+            <div class="hover-border"></div>
+        </div>
+
+        <!-- How to Join Card -->
+        <div class="card join-card">
+            <div class="card-shine"></div>
+            <div class="join-header">
+                <i class="fa-solid fa-gamepad"></i>
+                <h3>NASIL KATILIRIM?</h3>
+            </div>
+            
+            <div class="join-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <span class="step-title">Minecraft'ı Aç</span>
+                        <span class="step-desc">Bedrock/Java Edition 1.8-1.21.11</span>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <span class="step-title">Multiplayer'a Gir</span>
+                        <span class="step-desc">Ana menüden seç</span>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <span class="step-title">IP'yi Gir</span>
+                        <div class="inline-ip" id="copy-ip-2">
+<div id="copy-ip-2" style="
+    display: flex !important; 
+    align-items: center !important; 
+    justify-content: space-between !important; 
+    padding: 10px 8px !important; /* Sol boşluğu 15'ten 8'e düşürdük */
+    cursor: pointer !important; 
+    width: 100% !important; 
+    box-sizing: border-box !important;">
+    
+    <span class="mc-font" style="
+        font-size: 13px !important; 
+        margin-left: -2px !important; /* Yazıyı manuel olarak sola çeker */
+        padding: 0 !important;
+        text-align: left !important;
+        white-space: nowrap !important;
+        flex-grow: 1 !important;">dragonsmp.shock.gg</span>
+    
+    <i class="fa-solid fa-copy" style="
+        font-size: 14px !important; 
+        opacity: 0.6 !important;
+        flex-shrink: 0 !important;
+        margin-left: 10px !important;"></i>
+</div>
+    </main>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast hidden">
+        <div class="toast-icon">
+            <i class="fa-solid fa-check-circle"></i>
+        </div>
+        <div class="toast-content">
+            <span class="toast-title" id="toast-msg">Kopyalandı!</span>
+            <span class="toast-desc">IP adresi panoya kopyalandı</span>
+        </div>
+        <div class="toast-progress"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
